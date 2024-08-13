@@ -4,7 +4,7 @@ import {FaFacebook, FaGithub, FaInstagram, FaTwitter, FaTwitch} from 'react-icon
 const Footer = () => {
   return (
     <div className='w-full bg-[#5F6F65] text-gray-300 py-8 px-4'>
-      <div className='max-w-[1240px] mx-auto grid grid-cols-2 md:grid-cols-6 border-b-2 border-[#808D7C]-600 py-8'>
+      <div className='max-w-[1240px] mx-auto grid grid-cols-2 md:grid-cols-6 border-b-2 border-[#9CA986]-600 py-8'>
         <div>
           <h6 className='font-bold uppercase py-6'>Solutions</h6>
           <ol>
@@ -56,8 +56,8 @@ const Footer = () => {
 
       </div>
 
-      <div className='flex flex-col max-w-[1240px] px-2 py-4 m-auto justify-between sm:flex-row text-center text-gray-500 items-center'>
-            <p>2022 CWTS, LLC. All rights reserved.</p>
+      <div className='flex flex-col max-w-[1240px] px-2 py-4 m-auto justify-between sm:flex-row text-center text-[#808D7C]-500 items-center'>
+            <p>2024 Sarah Calista. All rights reserved.</p>
             <div className='flex justify-between sm:w-[300px] pt-4 text-2xl gap-2'>
                 <FaFacebook />
                 <FaGithub />

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { mbaksara1, mbaksara2, mbaksara3 } from '../assets'
 
 const Blogs = () => {
@@ -30,13 +31,15 @@ const Blogs = () => {
                 <div className='grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 ss:grid-cols-1 gap-8 px-4 text-black'>
 
                     {blogs.map((blog)=>
-                        <div className='bg-white rounded-x1 overflow-hidden drop-shadow-md'>
-                            <img className='h-56 w-full object-cover' src={blog.coverImg} />
-                            <div className='p-8'>
-                                <h3 className='font-bold text-2x1 my-1'>{blog.title}</h3>
-                                <p className='text-gray-600 text-xl'>{blog.desc}</p>
+                        <Link to={'/blog/${id}'}>
+                            <div className='bg-white rounded-x1 overflow-hidden drop-shadow-md'>
+                                <img className='h-56 w-full object-cover' src={blog.coverImg} />
+                                <div className='p-8'>
+                                    <h3 className='font-bold text-2x1 my-1'>{blog.title}</h3>
+                                    <p className='text-gray-600 text-xl'>{blog.desc}</p>
+                                </div>
                             </div>
-                        </div>
+                        </Link>
 
                     )}
 

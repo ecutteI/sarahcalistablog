@@ -40,3 +40,16 @@
 .read-the-docs {
   color: #888;
 }
+
+.carousel-button {
+  background-color: #4a4a4a; /* Gray background */
+  color: white; /* White icon */
+}
+
+.carousel-button:hover {
+  background-color: #6a6a6a; /* Darker gray on hover */
+}
+
+.carousel-button:focus {
+  outline: 4px solid #6a6a6a; /* Custom focus ring */
+}

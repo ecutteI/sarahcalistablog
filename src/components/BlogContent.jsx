@@ -1,15 +1,63 @@
 import React from 'react'
-import { mbaksara1 } from '../assets'
+import { useParams } from 'react-router-dom'
+import { mbaksara1,mbaksara2,mbaksara3, gallery1, gallery2, gallery3 } from '../assets'
 
 const BlogContent = () => {
 
-    const blog={
-        "id":1,
-        "title":"Day's out",
-        "desc":"where should we go next?",
-        "coverImg" : mbaksara1,
-        'content': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, impedit! Harum alias at voluptatem aspernatur hic nulla exercitationem magnam obcaecati, voluptatum optio praesentium velit nesciunt nam adipisci! Ducimus dolorem fuga laborum. Maxime commodi expedita atque maiores, facilis vel eos fugiat!'
-        
+    const {id}=useParams()
+
+    const blogs=[
+        {
+            'id': 1,
+            'title': "Day's out",
+            'desc': "where should we go next?",
+            'coverImg': mbaksara1,
+            'content': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, impedit! Harum alias at voluptatem aspernatur hic nulla exercitationem magnam obcaecati, voluptatum optio praesentium velit nesciunt nam adipisci! Ducimus dolorem fuga laborum. Maxime commodi expedita atque maiores, facilis vel eos fugiat!'
+        },
+        {
+            'id': 2,
+            'title': "Bücher",
+            'desc': "focusing on staying in the moment",
+            'coverImg': mbaksara2,
+            'content': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, impedit! Harum alias at voluptatem aspernatur hic nulla exercitationem magnam obcaecati, voluptatum optio praesentium velit nesciunt nam adipisci! Ducimus dolorem fuga laborum. Maxime commodi expedita atque maiores, facilis vel eos fugiat!'
+        },
+        {
+            'id': 3,
+            'title': "Telephone booth",
+            'desc': "feeling red🍓.",
+            'coverImg': mbaksara3,
+            'content': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, impedit! Harum alias at voluptatem aspernatur hic nulla exercitationem magnam obcaecati, voluptatum optio praesentium velit nesciunt nam adipisci! Ducimus dolorem fuga laborum. Maxime commodi expedita atque maiores, facilis vel eos fugiat!'
+        },
+        {
+            'id': 4,
+            'title': "Lorem Ipsum",
+            'desc': "Lorem Ipsum",
+            'coverImg': gallery1,
+            'content': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, impedit! Harum alias at voluptatem aspernatur hic nulla exercitationem magnam obcaecati, voluptatum optio praesentium velit nesciunt nam adipisci! Ducimus dolorem fuga laborum. Maxime commodi expedita atque maiores, facilis vel eos fugiat!'
+        },
+        {
+            'id': 5,
+            'title': "Lorem Ipsum",
+            'desc': "Lorem Ipsum",
+            'coverImg': gallery2,
+            'content': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, impedit! Harum alias at voluptatem aspernatur hic nulla exercitationem magnam obcaecati, voluptatum optio praesentium velit nesciunt nam adipisci! Ducimus dolorem fuga laborum. Maxime commodi expedita atque maiores, facilis vel eos fugiat!'
+        },
+        {
+            'id': 6,
+            'title': "Lorem Ipsum",
+            'desc': "Lorem Ipsum",
+            'coverImg': gallery3,
+            'content': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, impedit! Harum alias at voluptatem aspernatur hic nulla exercitationem magnam obcaecati, voluptatum optio praesentium velit nesciunt nam adipisci! Ducimus dolorem fuga laborum. Maxime commodi expedita atque maiores, facilis vel eos fugiat!'
+        }
+    ]
+
+    let blog={}
+    if(blog){
+            let arr = blogs.filter(blog=> blog.id == id)
+            blog=arr[0]
+
+    }else{
+        blog={}
     }
 
   return (

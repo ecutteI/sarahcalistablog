@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { mbaksara1, mbaksara2, mbaksara3 } from '../assets'
+import { mbaksara1, mbaksara2, mbaksara3, gallery1, gallery2, gallery3 } from '../assets'
 
-const Blogs = () => {
+const MoreBlogs = () => {
 
     const blogs = [
         {
@@ -22,7 +22,25 @@ const Blogs = () => {
             'title': "Telephone booth",
             'desc': "feeling red🍓.",
             'coverImg': mbaksara3,
-        }
+        },
+        {
+            'id': 4,
+            'title': "Lorem Ipsum",
+            'desc': "Lorem Ipsum",
+            'coverImg': gallery1,
+        },
+        {
+            'id': 5,
+            'title': "Lorem Ipsum",
+            'desc': "Lorem Ipsum",
+            'coverImg': gallery2,
+        },
+        {
+            'id': 6,
+            'title': "Lorem Ipsum",
+            'desc': "Lorem Ipsum",
+            'coverImg': gallery3,
+        },
     ]
 
     return (
@@ -51,4 +69,4 @@ const Blogs = () => {
     )
 }
 
-export default Blogs
+export default MoreBlogs

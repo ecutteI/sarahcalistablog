@@ -3,7 +3,7 @@ import { gallery1, gallery2, gallery3, gallery4, gallery5, gallery6, gallery7, g
 
 const GalleryContent = () => {
   return (
-    <div className="grid grid-cols-2 md:grid-cols-4 gap-4 p-5">
+    <div className="grid grid-cols-2 md:grid-cols-4 gap-4 p-10">
       {/* First Row */}
       <div className="grid gap-4 w-full h-full">
         <div>

@@ -16,6 +16,11 @@ import gallery9 from './images/gallery9.jpg';
 import gallery10 from './images/gallery10.jpg';
 import gallery11 from './images/gallery11.jpg';
 import gallery12 from './images/gallery12.jpg';
+import gallery13 from './images/gallery13.jpg';
+import nature1 from './images/nature1.jpg';
+import nature2 from './images/nature2.jpg';
+import nature3 from './images/nature3.jpg';
+import nature4 from './images/nature4.jpg';
  
 export {
   menu,
@@ -36,4 +41,9 @@ export {
   gallery10,
   gallery11,
   gallery12,
+  gallery13,
+  nature1,
+  nature2,
+  nature3,
+  nature4,
 };

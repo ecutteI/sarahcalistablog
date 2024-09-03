@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { gallery1, gallery2, gallery3, gallery4, gallery5 } from '../assets';
+import { nature1, nature2, nature3, nature4 } from '../assets';
 
-const images = [gallery1, gallery2, gallery3, gallery5];
+const images = [nature1, nature2, nature3, nature4];
 
 const Gallery = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
